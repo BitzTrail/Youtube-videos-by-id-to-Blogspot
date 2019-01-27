@@ -5,12 +5,12 @@
   </head>
   <body>
     Please fill in the form below.<br><br>
-    <form id="myForm" onsubmit="google.script.run.videosListById()">
+    <form id="myForm" onsubmit="google.script.run.withFailureHandler(console.log).withSuccessHandler(console.log).videosListById(this);return false;">
       videoID:
       <input type="text" name="mids"><br><br>
    
       BlogID:
-      <input type="text" mame="BLOGID"><br><br>
+      <input type="text" name="BLOGID"><br><br>
      
      
       <br>

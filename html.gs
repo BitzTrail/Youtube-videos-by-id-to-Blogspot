@@ -4,7 +4,14 @@
 
 
 
-function videosListById() {
+function videosListById(data) {
+
+  var mid = data.mids;
+  var blogid = data.blogid;
+
+  // Uncomment this for furure
+  return mid + blogid;
+
   var mid = ('Ks-_Mh1QhMc')         /** video id **/
   var results = YouTube.Videos.list("id,snippet",{'id': mid});
   for(var i in results.items) {
